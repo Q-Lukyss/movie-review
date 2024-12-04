@@ -1,0 +1,11 @@
+entryPoints:
+  web:
+    address: ":80"
+  traefik:
+    address: ":8080" # Dashboard accessible sur le port interne 8080
+api:
+  dashboard: true # Active le dashboard
+
+providers:
+  docker:
+    exposedByDefault: false

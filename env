@@ -1,0 +1,10 @@
+# Nom de domaine utilisé pour l'API et le frontend
+DOMAIN=example.fr
+
+# Email utilisé pour Let's Encrypt (certificats HTTPS)
+LETSENCRYPT_EMAIL=your-email@example.com
+
+# Ports pour Traefik
+TRAEFIK_HTTP_PORT=80
+TRAEFIK_HTTPS_PORT=443
+TRAEFIK_DASHBOARD_PORT=8080

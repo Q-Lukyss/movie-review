@@ -1,0 +1,16 @@
+entryPoints:
+  web:
+    address: ":${TRAEFIK_HTTP_PORT}"
+  websecure:
+    address: ":${TRAEFIK_HTTPS_PORT}"
+
+certificatesResolvers:
+  myresolver:
+    acme:
+      email: "${LETSENCRYPT_EMAIL}"
+      storage: /letsencrypt/acme.json
+      tlsChallenge: {}
+
+providers:
+  docker:
+    exposedByDefault: false
