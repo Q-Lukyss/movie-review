@@ -20,7 +20,7 @@ Récupérer via git ou .zip
 Renommer le fichier env en .env   
 Pour le développement local vous pouvez laisser les champs DOMAIN et LETSENCRYPT_EMAIL par défaut, à changer en prod
 
-## Developpement Local
+## Créer les conteneurs avec docker-compose.local
 
 A la racine du projet executez:
 ```
@@ -30,6 +30,32 @@ Vous pouvez ensuite accéder au dashboard traefik à `http://localhost:<TRAEFIK_
 PS: le dernier `/` après dashboard est important   
 Au frontend Nuxt à `http://localhost:<TRAEFIK_HTTP_PORT>/`   
 Et à l'api Go Gin à `http://localhost:<TRAEFIK_HTTP_PORT>/api/`   
+
+### Hot reload
+
+Il n'y a pas de hot reload / rechargement à chaud de cette maniere si bous voulez un hot reload :
+
+#### Nuxt
+
+Lancer Nuxt en mode dev   
+``` 
+cd .\nuxt-frontend\
+```
+et 
+``` 
+npm run dev
+```
+
+#### Gin
+
+Lancer Gin avec air   
+``` 
+cd .\gin-api\
+```
+et 
+``` 
+air
+```
 
 ## Production
 
