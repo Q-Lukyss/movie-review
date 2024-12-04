@@ -12,7 +12,8 @@ Le but de cette petite application est de permettre aux utilisateurs de créer d
 
 ## Prérequis
 
-[Docker](https://www.docker.com/) installé
+* [Docker](https://www.docker.com/) installé   
+* Créer le ficher vierge /traefik/acme.json
 
 ## Configuration
 
